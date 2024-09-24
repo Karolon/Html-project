@@ -1,0 +1,17 @@
+.navbar{
+  border-radius: 20px;
+  background-color: rgb(22, 211, 15);
+  padding: 5px 15px 5px 15px;
+  display: inline-flex; 
+  width:80%;
+  margin: auto;
+  border: 3px solid green;
+  padding: 10px;
+}
+.navbutton{
+  padding: 10px;
+  height:auto;  
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+}
