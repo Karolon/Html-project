@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TO_DO-name</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <center>
+      <nav class="navbar">
+        <a href="main.html" class="navbutton">Strona główna</a>
+        <a href="cinema.html" class="navbutton">Kino</a>
+        <a href="radio.html" class="navbutton">Radio</a>
+        <a href="form.html" class="navbutton">Sprzedaj dane</a>
+        <a href="table.html" class="navbutton">Tabela</a>
+      </nav>
+    </center>
+
+    <center>
+      <table class="radiotable">
+        <tr>
+          <td class = table_td> 
+            <img src="Image/radio1_background.png" class="radioimage"> 
+            <div class="table_cell">
+              <center>
+                <input type="button" onclick="get_random_music(1)" value="Randomowa muzyka - stacja 1" class = "musicbutton"></button>
+              </center>
+              <audio id="audio1" controls>
+                <source src="" type="audio/mp3">
+              </audio>
+            </div>
+          </td>
+          <td>
+            <img src="Image/radio2_background.png" class="radioimage"> 
+            <div class="table_cell">
+              <center>
+                <input type="button" onclick="get_random_music(2)" value="Randomowa muzyka - stacja 2" class = "musicbutton"></button>
+              </center>
+              <audio id="audio2" controls>
+                <source src="" type="audio/mp3">
+              </audio>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="Image/radio3_background.jpg" class="radioimage"> 
+            <div class="table_cell">
+              <center>
+                <input type="button" onclick="get_random_music(3)" value="Randomowa muzyka - stacja 3" class = "musicbutton"></button>
+              </center>
+              <audio id="audio3" controls>
+                <source src="" type="audio/mp3">
+              </audio>
+            </div>
+          </td>
+          <td>
+            <img src="Image/radio4_background.png" class="radioimage"> 
+            <div class="table_cell">
+              <center>
+                <input type="button" onclick="get_random_music(4)" value="Randomowa muzyka - stacja 4" class = "musicbutton"></button>
+              </center>
+              <audio id="audio4" controls>
+                <source src="" type="audio/mp3">
+              </audio>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

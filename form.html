@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TO_DO-name</title>
+    <link rel="stylesheet" href="style.css">
+    <script  src="js.js"></script>
+  </head>
+  <body>
+    <center>
+      <nav class="navbar">
+        <a href="main.html" class="navbutton">Strona główna</a>
+        <a href="cinema.html" class="navbutton">Kino</a>
+        <a href="radio.html" class="navbutton">Radio</a>
+        <a href="form.html" class="navbutton">Sprzedaj dane</a>
+        <a href="table.html" class="navbutton">Tabela</a>
+      </nav>
+    </center>
+
+    <center>
+      <div >
+        <form class="sign_in_form">
+
+          <h1 class="label-form">Sign in</h1>
+
+          <label class="label-form" for="input-fname">Imie</label><br>
+          <input type="text" id="input-fname" class="input-form">
+          <br>
+
+          <label class="label-form" for="input-lname">Nazwisko</label><br>
+          <input type="text" id="input-lname" class="input-form">
+          <br><br>
+          
+          <label class="label-form" for="input-username">Nazwa użytkownika</label><br>
+          <input type="text" id="input-username" placeholder="text" class="input-form">
+          <br><br>
+
+          <label class="label-form" for="input-password">Hasło</label><br>
+          <input type="password" id="input-password" class="input-form" onfocusout="isPasswordCorrect()">
+          <br>
+
+          <label class="label-form" for="input-password">Potwierdź hasło</label><br>
+          <input type="password" id="input-password2" class="input-form" onfocusout="isPasswordCorrect()"><br>
+          <label class="label-form" id="password_error">Hasła muszą być takie same!</label>
+          <br><br>
+
+          <label class="label-form" for="input-number">Numer</label><br>
+          <input type="number" id="input-number" max="999999999" min="100000000" class="input-form">
+          <br><br>
+
+          <div class="long_text">
+            <label class="label-form">Zgadzam się na warunki używania tej strony i na sprzedanie mojej duszy organizacji międzynarodowej która nie ma nazwy, jeżeli chcesz się dowiedzieć więcej to masz pecha sam niewiem jak to zrobic. Mam nadzieje że to ci mimo wszystko nie przeszkadza i że nasza współpraca zaowocuje jak gruszki na wierzbie.</label>
+            <input type="checkbox" id="checkbox1" onclick="isAllChecked()">
+            <br><br>
+
+            <label class="label-form">Zgadzam się na</label>
+            <label class="label-form font2">
+              Dori me Interimo, adapare Dori me Ameno, Ameno Latire Latiremo Dori me Ameno Omenare imperavi ameno Dimere, dimere matiro Matiremo Ameno Omenare imperavi emulari, ameno Omenare imperavi emulari, ameno
+            </label>
+            <input type="checkbox" id="checkbox2"  checked="checked" onclick="isAllChecked()">
+          </div>
+          <br><br>
+
+          <label><input type="radio" class="radiobutton" name="opcje" id="radio1">I am sane</label>
+          <br>
+          <label><input type="radio" class="radiobutton" name="opcje" id="radio2">I play Genshin for the plot </label>
+          <br><br>
+
+          <label class="label_gender">Płeć</label><br>
+          <select name="Select_gender" id="gender">
+            <option>Wybierz</option>
+            <option>Kobieta</option>
+            <option>Człowiek</option>
+            <option>Torba z walmarta</option>
+            <option>Helikopter bojowy Boeing AH-64 Apache</option>
+          </select>
+          <br><br>
+          
+          <input type="button" id="submitbutton" value="Wyślij" disabled="disabled" onclick="DaneSolled()"> 
+
+        </form>
+      </div>
+    </center>
+
+
+
+  </body>
+</html>
