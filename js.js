@@ -62,6 +62,8 @@ function errorWindow(){
   document.body.style.animation ='rotate 3s 1';
   document.body.style.transform = 'rotate(-5deg)';
   document.body.style.marginTop = '50px';
+  document.body.style.cursor = 'not-allowed';
+  document.body.children.style.cursor = 'not-allowed';
 }
 function DaneSolled(){
   window.alert('Twoje dane zostałty pomyślnie sprzedane!');
